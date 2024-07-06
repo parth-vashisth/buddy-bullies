@@ -123,6 +123,7 @@
 .centr {
     top: -58%;
     left: -8%;
+    z-index: -1;
 }
 
 .mint {
