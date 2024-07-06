@@ -101,7 +101,7 @@
 }
 
 .pt-300 {
-    padding-top: 300px !important;
+    padding-top: 240px !important;
 }
 
 /* section-2 */
@@ -362,6 +362,10 @@
     text-align: center;
     color: var(--clr-white);
     max-width: 786px;
+}
+.right1{
+    right: 0%;
+    top: -30%;
 }
 
 .faq {
