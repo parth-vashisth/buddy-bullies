@@ -473,3 +473,21 @@
 .mainparent {
     margin-top: 47px;
 }
+
+.designer {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-18);
+    font-weight: 400;
+    text-align: center;
+    color: var(--clr-white);
+    line-height: 24.48px;
+}
+
+.prime {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fs-30);
+    font-weight: 600;
+    text-align: center;
+    color: var(--clr-white);
+    line-height: 40.8px;
+}
