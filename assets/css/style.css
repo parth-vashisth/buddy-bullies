@@ -376,8 +376,8 @@
 .parent-acc {
     width: 830px;
     /* height: 64px; */
-    border-radius: 150px;
-    background: #031227;
+    /* border-radius: 150px; */
+    /* background: #031227; */
 }
 
 .mt24 {
@@ -430,7 +430,7 @@
 }
 
 .acc-txt {
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: var(--fs-16);
     font-weight: 500;
     line-height: 19.5px;
@@ -463,4 +463,13 @@
     .rotate {
         transform: rotate(180deg);
     }
+}
+
+.round-box {
+    background: var(--clr-darkblue);
+    border-radius: 45px;
+}
+
+.mainparent {
+    margin-top: 47px;
 }
