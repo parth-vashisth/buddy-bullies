@@ -39,6 +39,14 @@
     min-height: 100vh;
 }
 
+.navline {
+    width: 30px;
+    height: 4px;
+    margin-top: 5px;
+    background: var(--clr-blue);
+}
+
+
 .gap-80 {
     gap: 80px;
 }
@@ -100,9 +108,12 @@
     margin-top: 46px;
 }
 
-.pt-300 {
-    padding-top: 240px !important;
+.get-btn:hover {
+    /* background: var(--clr-bg); */
+    border: 1px solid var(--clr-bluetxt);
+    color: var(--clr-blue);
 }
+
 
 /* section-2 */
 .bgclr {
@@ -184,7 +195,7 @@
 /* section-3 */
 .bluebox {
     width: 100%;
-    height: 511px;
+    height: 100%;
     background: var(--clr-darkblue);
     border-radius: 20px;
     padding: 40px;
@@ -270,7 +281,7 @@
 .dot-left1::after {
     content: '';
     position: absolute;
-    top: 42%;
+    top: 0%;
     border-radius: 50%;
     background-color: var(--clr-blue);
     width: 43px;
@@ -284,12 +295,12 @@
 .dot-right::after {
     content: '';
     position: absolute;
-    top: 40%;
+    top: 12%;
     border-radius: 50%;
     background-color: var(--clr-blue);
     width: 43px;
     height: 43px;
-    right: -21px;
+    right: 87%;
     border: 4px solid var(--clr-white);
     z-index: 1;
     box-shadow: 0px 0px 0px 10px var(--clr-bluetxt);
@@ -302,9 +313,13 @@
     width: 0px;
     border-right: 2px dashed;
     top: 0%;
-    left: 50%;
+    left: 5%;
     border-color: white;
-    height: 740px;
+    max-height: 730px;
+}
+
+.pl-65 {
+    padding-left: 65px !important;
 }
 
 .left0 {
@@ -312,7 +327,7 @@
 }
 
 .left50 {
-    left: 50%;
+    left: 5%;
 }
 
 .pt-105 {
@@ -335,6 +350,7 @@
     line-height: 29.2px;
     text-align: left;
     color: var(--clr-grey);
+    max-width: 350px;
 }
 
 .right {
@@ -363,7 +379,8 @@
     color: var(--clr-white);
     max-width: 786px;
 }
-.right1{
+
+.right1 {
     right: 0%;
     top: -30%;
 }
@@ -379,10 +396,8 @@
 }
 
 .parent-acc {
-    width: 830px;
-    /* height: 64px; */
-    /* border-radius: 150px; */
-    /* background: #031227; */
+    max-width: 830px;
+    width: 100%;
 }
 
 .mt24 {
@@ -403,7 +418,7 @@
 
 .text-accordion {
     position: absolute;
-    top: -150%;
+    top: -200%;
     left: 0%;
     padding: 20px;
 }
@@ -560,4 +575,123 @@
     line-height: 19.04px;
     text-align: left;
     color: var(--clr-white);
+}
+
+@media (max-width: 991px) {
+    .lg-view {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -150%;
+        background-color: var(--clr-bluetxt);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 17 !important;
+        transition: 0.5s;
+        gap: 20px;
+    }
+
+    .navicon {
+        z-index: 20;
+    }
+
+    .show {
+        left: 0%;
+    }
+
+}
+
+@media (min-width:576px) {
+    .dot-right::after {
+        right: 91%;
+    }
+
+}
+
+
+@media (min-width:992px) {
+    .dot-left::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        border-radius: 50%;
+        background-color: var(--clr-blue);
+        width: 43px;
+        border: 4px solid var(--clr-white);
+        height: 43px;
+        left: -21px;
+        z-index: 1;
+        box-shadow: #009DFF;
+        box-shadow: 0px 0px 0px 10px var(--clr-bluetxt);
+    }
+
+    .dot-left1::after {
+        content: '';
+        position: absolute;
+        top: 42%;
+        border-radius: 50%;
+        background-color: var(--clr-blue);
+        width: 43px;
+        height: 43px;
+        border: 4px solid var(--clr-white);
+        left: -21px;
+        z-index: 1;
+        box-shadow: 0px 0px 0px 10px var(--clr-bluetxt);
+    }
+
+    .dot-right::after {
+        content: '';
+        position: absolute;
+        top: 40%;
+        border-radius: 50%;
+        background-color: var(--clr-blue);
+        width: 43px;
+        height: 43px;
+        right: -21px;
+        border: 4px solid var(--clr-white);
+        z-index: 1;
+        box-shadow: 0px 0px 0px 10px var(--clr-bluetxt);
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0px;
+        border-right: 2px dashed;
+        top: 0%;
+        left: 50%;
+        border-color: white;
+        height: 740px;
+    }
+
+    .left0 {
+        left: -50%;
+    }
+
+    .left50 {
+        left: 50%;
+    }
+
+
+    .pt-lg-105 {
+        padding-top: 170px !important;
+    }
+
+    .pt-lg-120 {
+        padding-top: 120px !important;
+    }
+}
+
+@media (min-width:1200px) {
+    .pt-xl-220 {
+        padding-top: 220px !important;
+    }
+
+    .pl-xl-250 {
+        padding-left: 250px !important;
+    }
 }
