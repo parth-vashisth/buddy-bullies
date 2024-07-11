@@ -109,9 +109,9 @@
 }
 
 .get-btn:hover {
-    /* background: var(--clr-bg); */
-    border: 1px solid var(--clr-bluetxt);
-    color: var(--clr-blue);
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-blue);
+  color: var(--clr-white);
 }
 
 
