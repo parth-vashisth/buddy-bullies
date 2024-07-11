@@ -105,6 +105,7 @@
     border-radius: 45.5px;
     background: var(--clr-white);
     border: none;
+    z-index: 2;
     margin-top: 46px;
 }
 
